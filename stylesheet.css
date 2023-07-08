@@ -8,6 +8,7 @@
 
 body {
     color: #ededed;
+    background: black;
 }
 
 .header {
@@ -16,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background:darkturquoise;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +49,10 @@ body {
 }
 
 .navbar a:hover {
-    color: #0ef;
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0 5px rgb(0, 0, 0),
+        0 0 25px rgb(0, 0, 0);
+        
 }
 
 .home {
@@ -57,17 +61,29 @@ body {
     justify-content: space-between;
     height: 100vh;
     background-color: rgb(0, 0, 0);
-    background-image: url('6.jpg');
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    gap: 2rem;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
+    align-items: center;    
     padding: 70px 10% 0;
 }
-
+.image
+{
+    grid-column: 2;
+}
+.image img {
+    
+    padding-bottom: 20%;
+    max-width: 570px;
+    height: auto;
+    width: 100%;
+    
+}
 .home-content {
-    max-width: 600px;
+    max-width: 700px;
 }
 
 .home-content h3 {
@@ -102,6 +118,7 @@ body {
 .home-content p {
     font-size: 20px;
     opacity: 0;
+    nav-down: ';lkjfgui';
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
 }
@@ -152,6 +169,58 @@ body {
     box-shadow: 0 0 5px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan
 }
 
+.about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+.about-img {
+    grid-column: 1;
+}
+
+.about-img img {
+    padding-left: 20%;
+    
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.about-text h2 {
+    font-size: 60px;
+}
+
+.about-text h2 span {
+    color: #0ef;
+}
+
+.about-text h4 {
+    font-size: 29px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 1.7;
+    margin: 15px 0 30px;
+}
+
+.about-text p {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+    text-align: justify;
+    text-justify: inter-word;
+    padding-right: 5%;
+}
+
+
+
+
+
+
+
 
 @keyframes slideRight {
     0% {
@@ -189,20 +258,8 @@ body {
     }
 }
 
-.about {
-    position: relative;
-    width: 100%;
-    justify-content: space-between;
-    height: 100vh;
-    background-color: rgb(0, 0, 0);
-    background-image: url('7.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    padding: 70px 10% 0;
-}
+
+
 
 @keyframes slideLeft {
     0% {
