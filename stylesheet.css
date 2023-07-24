@@ -3,7 +3,8 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
-
+    text-align: justify;
+    align-items: center;
 }
 
 body {
@@ -237,11 +238,12 @@ body {
 
 .container {
     padding: 90px;
+    
 }
 
 .services-list {
-    display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(259, 1fr));
+    display:grid;
+    grid-template-columns: auto auto auto;
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -312,8 +314,11 @@ section {
 .container1 {
     width: 600px;
     height: 700px;
-    padding: 75px 90px;
-    margin-left: 120px;
+    padding: 50px 90px;
+    margin-left: 90px;
+    
+    
+
 }
 
 .heading1 {
@@ -582,6 +587,9 @@ section {
     margin-top:130px;
 }
 
+.contact-text{
+    text-align:center;
+}
 .contact-text h2{
     font-size:90px;
     line-height: 1;
@@ -607,7 +615,8 @@ section {
 }
 
 .contact-list{
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
+    padding-top: 20px;
 }
 
 .contact-list li{
@@ -698,6 +707,110 @@ section {
         0 0 50px cyan, 0 0 100px cyan, 0 0 200px cyan;
 
 }
+
+.mov {
+    width: 350px;
+    height: 200px;
+  }
+
+
+
+  #projects {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 4rem;
+}
+
+.sub-title-1 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.sub-title-1 span {
+    color: #0ef;
+
+}
+
+.container2 {
+    padding: 60px;
+    
+}
+
+.projects-list {
+    display:grid;
+    grid-template-columns: auto auto auto ;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.projects-list div {
+    background-color: transparent;
+    color: #ffffff;
+    
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 13px;
+    border-right: 10px;
+    border-radius: 20px;
+    transition: background 0.5s, transform 0.5s;
+    box-shadow: 1px 1px 20px #012290f7,
+        1px 1px 40px #0053b8f7
+}
+
+.projects-list div:hover{
+    color:rebeccapurple;
+}
+.projects-list div i {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+
+.projects-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.projects-list div a {
+    text-decoration: none;
+    color: #000000;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+
+.projects-list div:hover {
+    transform: translate(-20px,-20px);
+}
+
+.sub-title-2 {
+    text-align: center;
+    font-size: 60px;
+    padding-bottom: 70px;
+}
+
+.sub-title-2 span {
+    color: #0ef;
+
+}
+
+.about-list {
+    display:grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+
+
+
+
+
+
+
 
 
 
