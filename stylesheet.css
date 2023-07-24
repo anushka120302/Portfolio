@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -12,12 +12,13 @@ body {
     background: black;
 }
 
+
 .header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    padding: 20px 10%;
+    padding: 50px 100px;
     background: darkturquoise;
     display: flex;
     justify-content: space-between;
@@ -868,5 +869,126 @@ section {
     100% {
         transform: translateX(0px);
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .home {
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        width: max-content;
+        justify-content: center;
+    }
+    #about {
+        margin-top: -120px;
+        margin-right: 100px;
+    }
+    .about-text{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-text h2 {
+        margin-right: 400px;
+    }
+    .about-text h4 {
+            padding-top: 150px;
+            margin-left: -550px;
+    }
+    .about-text p {
+        width: 1200px;
+        margin-left: -200px;
+        padding: 0 100px;
+    }
+    .sub-title {
+        padding-left: 300px;
+    }
+    .home-kk {
+        margin-left: 250px;
+    }
+    .services-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-left: 230px;
+        width: 850px;
+    }
+    .sub-title-kk{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 400px;
+    }
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        text-align: center;
+        margin-left: 350px;
+    }
+    .heading1 {
+        font-size: 50px;
+        margin-left: 180px;
+    }
+    .technical-bars{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .bar {
+        display: flex;
+        margin: 20px;
+        font-size: 150px;
+        width: 600px;
+    }
+    .container1-kk{
+        margin-top: 850px;
+    }
+        .radial-bars {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            margin-left: 200px;
+        }
+        .radial-bar {
+            display: flex;
+        }
+    .container2 {
+        text-align: center;
+        margin-left: 200px;
+    }
+    .projects-list {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .projects-list div {
+        width: 1000px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    .contact-text {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        flex-wrap: wrap;
+        width: 250px;
+    }
+    .contact {
+        margin-left: 325px;
+        gap: 50px;
+        height: 500px;
+    }
+    .contact-form {
+        width: 700px;
+        margin-left: 50px;
     }
 }
